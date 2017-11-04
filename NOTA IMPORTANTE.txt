@@ -1,7 +1,0 @@
-Que onda profe, soy Daniel.
-
-Solo le envio el codigo en C ya que hubo algunos problemas con mi equipo.
-Todo el codigo lo realice yo, pero los demas integrantes ya lo tienen (mañosos los chavos XD), 
-por si lo llega a ver repetido por ahi, pues ya sabe de quien es :D 
-
-
