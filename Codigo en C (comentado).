@@ -5,10 +5,10 @@ main ()
 {
 int x,y;
 
-printf("¿De cuantos renglones sera tu matriz?:");
+printf("Â¿De cuantos renglones sera tu matriz?:");
 scanf("%i",&x);
 
-  printf("¿De cuantas columnas sera tu matriz?");
+  printf("Â¿De cuantas columnas sera tu matriz?");
   scanf("%i",&y);
     
 
@@ -16,20 +16,20 @@ scanf("%i",&x);
 	#define c= ("%i",y)
 
 /*Al momento de definir las variables (x,y) tuve algunos problemas porque
- no sabía si dirigirlas solamente a (x,y) o agregarle el (%i). */
+ no sabÃ­a si dirigirlas solamente a (x,y) o agregarle el (%i). */
 	
 		int a[100][100],b[100][100],d[100][100],z,k;
 
-/*Estuve atorado en esta parte porque al principio definía las matrices exactas y
- el producto resultaba erróneo, después decidí ampliarlas a 100x100 y ya funcionaba. */
+/*Estuve atorado en esta parte porque al principio definÃ­a las matrices exactas y
+ el producto resultaba errÃ³neo, despuÃ©s decidÃ­ ampliarlas a 100x100 y ya funcionaba. */
 
 	printf("matriz_1 [%i][%i]",x,y);
 	
 	for(z=1;z<=x;z++)//renglones
 	   for(k=1;k<=y;k++)//columnas
 
-/* En los ciclos "for" también tuve problemas porque no sabía cómo asignarle valor al (<=),
- luego definí las variables (x,y) y funciono. */
+/* En los ciclos "for" tambiÃ©n tuve problemas porque no sabÃ­a cÃ³mo asignarle valor al (<=),
+ luego definÃ­ las variables (x,y) y funciono. */
 
 	{
 		printf("\n introducir valor de [%i][%i] :",z,k);
@@ -51,9 +51,9 @@ scanf("%i",&x);
 	   for(k=1;k<=y;k++)//columnas
 	       d[z][k]= (a[1][k]*b[z][1])+(a[2][k]*b[z][2])+(a[3][k]*b[z][3])+(a[4][k]*b[z][4])+0;
 
-/* Para darle la instrucción de multiplicar, fueron una serie de pruebas 
-que consistían en relacionar las coordenadas de renglones y columnas para
- lograr un orden al realizar la operación */
+/* Para darle la instrucciÃ³n de multiplicar, fueron una serie de pruebas 
+que consistÃ­an en relacionar las coordenadas de renglones y columnas para
+ lograr un orden al realizar la operaciÃ³n */
 
 	       
 	           for(z=1;z<=x;z++)//renglones
@@ -63,8 +63,8 @@ que consistían en relacionar las coordenadas de renglones y columnas para
 	    printf("%i", d[z][k]);
 	      printf("\n");
 	      
-/* Aquí para la impresión de la matriz primero había intentado usar las funciones
- de (\t) y (\v), pero no me funcionaron como quería.*/
+/* AquÃ­ para la impresiÃ³n de la matriz primero habÃ­a intentado usar las funciones
+ de (\t) y (\v), pero no me funcionaron como querÃ­a.*/
  
 
 	}
