@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+main () 
+{
+int x,y;
+
+printf("¿De cuantos renglones sera tu matriz?:");
+scanf("%i",&x);
+
+  printf("¿De cuantas columnas sera tu matriz?");
+  scanf("%i",&y);
+    
+
+	#define r= ("%i",x)
+	#define c= ("%i",y)
+
+/*Al momento de definir las variables (x,y) tuve algunos problemas porque
+ no sabía si dirigirlas solamente a (x,y) o agregarle el (%i). */
+	
+		int a[100][100],b[100][100],d[100][100],z,k;
+
+/*Estuve atorado en esta parte porque al principio definía las matrices exactas y
+ el producto resultaba erróneo, después decidí ampliarlas a 100x100 y ya funcionaba. */
+
+	printf("matriz_1 [%i][%i]",x,y);
+	
+	for(z=1;z<=x;z++)//renglones
+	   for(k=1;k<=y;k++)//columnas
+
+/* En los ciclos "for" también tuve problemas porque no sabía cómo asignarle valor al (<=),
+ luego definí las variables (x,y) y funciono. */
+
+	{
+		printf("\n introducir valor de [%i][%i] :",z,k);
+		scanf("%d",&a[z][k]);
+	}
+	system("cls");
+	
+			printf("matriz_2 [%i][%i]",x,y);
+    	for(z=1;z<=x;z++)//renglones
+	       for(k=1;k<=y;k++)//columnas
+	
+	{
+		printf("\n introducir valor de [%i][%i] :",z,k);
+		scanf("%d",&b[z][k]);
+	}
+	system("cls");
+	
+		for(z=1;z<=x;z++)//renglones
+	   for(k=1;k<=y;k++)//columnas
+	       d[z][k]= (a[1][k]*b[z][1])+(a[2][k]*b[z][2])+(a[3][k]*b[z][3])+(a[4][k]*b[z][4])+0;
+
+/* Para darle la instrucción de multiplicar, fueron una serie de pruebas 
+que consistían en relacionar las coordenadas de renglones y columnas para
+ lograr un orden al realizar la operación */
+
+	       
+	           for(z=1;z<=x;z++)//renglones
+    {
+	for(k=1;k<=y;k++)//columnas
+	       
+	    printf("%i", d[z][k]);
+	      printf("\n");
+	      
+/* Aquí para la impresión de la matriz primero había intentado usar las funciones
+ de (\t) y (\v), pero no me funcionaron como quería.*/
+ 
+
+	}
+	
+	system ("pause");
+}
