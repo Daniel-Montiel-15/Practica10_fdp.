@@ -5,10 +5,10 @@ main ()
 {
 int x,y;
 
-printf("¿De cuantos renglones sera tu matriz?:");
+printf("Â¿De cuantos renglones sera tu matriz?:");
 scanf("%i",&x);
 
-  printf("¿De cuantas columnas sera tu matriz?");
+  printf("Â¿De cuantas columnas sera tu matriz?");
   scanf("%i",&y);
     
 
